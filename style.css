@@ -124,7 +124,7 @@ button {
    4. SITE HEADER
 ───────────────────────────────────────────── */
 .site-header {
-  background: #CD9829;
+  background: #cead70;
   color: #2E1F14;
   padding-block: var(--sp-7) var(--sp-8);
   position: relative;
@@ -306,6 +306,23 @@ button {
   border-radius: 50%;
   background: var(--clr-accent);
   flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────────
+   INTRO QUOTE — abaixo do nav
+───────────────────────────────────────────── */
+.intro-quote {
+  padding-block: var(--sp-5);
+  text-align: center;
+}
+
+.intro-quote__text {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
+  color: var(--clr-primary);
+  letter-spacing: 0.01em;
 }
 
 /* ─────────────────────────────────────────────
