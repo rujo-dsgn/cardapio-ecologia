@@ -687,6 +687,11 @@ button {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.site-footer__legal-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* ─────────────────────────────────────────────
    16. ÁREA DE RESERVAS
 ───────────────────────────────────────────── */
