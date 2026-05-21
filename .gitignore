@@ -7,6 +7,9 @@ desktop.ini
 *.log
 npm-debug.log*
 
+# Claude Code (interno)
+.claude/
+
 # Editor
 .vscode/
 *.swp
