@@ -581,8 +581,8 @@ button {
 
 .suppliers__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--sp-4) var(--sp-3);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3) var(--sp-3);
   align-items: center;
   justify-items: center;
 }
@@ -766,7 +766,7 @@ button {
   }
 
   .suppliers__grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .site-footer__inner {
