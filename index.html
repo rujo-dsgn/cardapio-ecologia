@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecologia — Café Orgânico</title>
+  <meta name="description" content="Cardápio do Ecologia Café Orgânico. Uma refeição saborosa cultivada sem agrotóxicos, em harmonia com seu corpo e o planeta.">
+  <meta name="theme-color" content="#2D4A1E">
+
+  <link rel="icon" type="image/svg+xml" href="logo/SVG/favicon-sitio.svg">
+
+  <!-- Adobe Fonts: Dupincel VF -->
+  <link rel="stylesheet" href="https://use.typekit.net/sfq6pox.css">
+
+  <!-- Google Fonts: Playfair Display + Karla -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner container">
+      <a href="#" class="site-header__logo-link" aria-label="Ecologia Café Orgânico — Início">
+        <img src="logo/SVG/logo-sitio-novo.svg" alt="Ecologia Café Orgânico" class="site-header__logo">
+      </a>
+      <p class="site-header__tagline">
+        Tudo Orgânico para você conhecer o verdadeiro sabor da natureza!
+      </p>
+    </div>
+  </header>
+
+  <!-- ===================== NAVEGAÇÃO STICKY ===================== -->
+  <nav class="category-nav" id="category-nav" aria-label="Categorias do cardápio">
+    <div class="category-nav__track">
+      <ul class="category-nav__list" role="list">
+        <li><a href="#combos"    class="nav-link" data-section="combos">Combos</a></li>
+        <li><a href="#salgados"  class="nav-link" data-section="salgados">Salgados</a></li>
+        <li><a href="#especiais" class="nav-link" data-section="especiais">Especiais</a></li>
+        <li><a href="#doces"     class="nav-link" data-section="doces">Doces</a></li>
+        <li><a href="#bebidas"   class="nav-link" data-section="bebidas">Bebidas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+  <main id="main-content">
+
+    <!-- ────────────── COMBOS ────────────── -->
+    <section id="combos" class="menu-section" aria-labelledby="combos-heading">
+
+      <div class="section-header container" data-animate>
+        <span class="section-label">Para começar bem</span>
+        <h2 class="section-title" id="combos-heading">Combos</h2>
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+      </div>
+
+      <div class="section-hero container" data-animate>
+        <img src="fotos/combo.png"
+             alt="Café da manhã orgânico — combinação de pão, café e salada de frutas"
+             class="section-hero__img"
+             loading="lazy">
+      </div>
+
+      <div class="items-grid container">
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Combo Bom Dia</h3>
+              <span class="menu-item__price" aria-label="R$ 35">R$&nbsp;35</span>
+            </div>
+            <p class="menu-item__desc">1 toast com ovo mexido e 1 suco especial <em>(consulte sabores)</em>.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Combo Energia</h3>
+              <span class="menu-item__price" aria-label="R$ 36">R$&nbsp;36</span>
+            </div>
+            <p class="menu-item__desc">1 pão de queijo, 1 café G e 1 salada de frutas.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Combo Felicidade</h3>
+              <span class="menu-item__price" aria-label="R$ 36">R$&nbsp;36</span>
+            </div>
+            <p class="menu-item__desc">1 quiche, 1 suco e 1 cookie.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="quote-block container" data-animate>
+        <blockquote class="quote-block__quote">
+          <p>Uma refeição orgânica, o que isso quer dizer? Significa que os alimentos que
+          oferecemos em nosso cardápio são cultivados sem o uso de agrotóxicos, fertilizantes
+          químicos, transgênicos (ogms) e outros aditivos artificiais.</p>
+          <p>Isso inclui as frutas e seus sucos, os vegetais, as farinhas, polvilho, queijos
+          e manteiga, ovos, açúcar, geleia, sementes, mel, e o próprio café.</p>
+          <footer class="quote-block__footer">Todos os nossos ingredientes são orgânicos!</footer>
+        </blockquote>
+      </div>
+
+    </section>
+
+    <!-- ────────────── SALGADOS ────────────── -->
+    <section id="salgados" class="menu-section menu-section--alt" aria-labelledby="salgados-heading">
+
+      <div class="section-header container" data-animate>
+        <span class="section-label">Da nossa cozinha</span>
+        <h2 class="section-title" id="salgados-heading">Salgados</h2>
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+      </div>
+
+      <div class="section-hero container" data-animate>
+        <img src="fotos/salgados.png"
+             alt="Toast artesanal com ovos mexidos cremosos e orgânicos"
+             class="section-hero__img"
+             loading="lazy">
+      </div>
+
+      <div class="items-grid container">
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Pão de Queijo</h3>
+              <span class="menu-item__price" aria-label="R$ 11">R$&nbsp;11</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Pão de Beijo Vegano</h3>
+              <span class="menu-item__price" aria-label="R$ 6">R$&nbsp;6</span>
+            </div>
+            <p class="menu-item__desc">Nossa releitura do tradicional pão de queijo, elaborado com base de polvilho, batata doce e ervas.</p>
+            <span class="vegan-badge">
+              <img src="fotos/Group1.png" alt="" aria-hidden="true" width="13" height="13">Vegano
+            </span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Quiche</h3>
+              <span class="menu-item__price" aria-label="R$ 20">R$&nbsp;20</span>
+            </div>
+            <p class="menu-item__desc">Palmito ou abobrinha.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Pão na Chapa</h3>
+              <span class="menu-item__price" aria-label="R$ 10">R$&nbsp;10</span>
+            </div>
+            <p class="menu-item__desc">Pão integral, cabotiã ou batata doce artesanal orgânico com manteiga orgânica ou aromatizado com ervas.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Toast com Ovo Mexido</h3>
+              <span class="menu-item__price" aria-label="R$ 20">R$&nbsp;20</span>
+            </div>
+            <p class="menu-item__desc">Pão integral, cabotiã ou de batata doce com ovos mexidos cremosos e orgânicos, finalizado com cebolinha.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Bruschetta de Ricota</h3>
+              <span class="menu-item__price" aria-label="R$ 20">R$&nbsp;20</span>
+            </div>
+            <p class="menu-item__desc">Toast de pão integral, cabotiã ou de batata doce com ricota orgânica, tomate confit e molho de manjericão.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Empanada Vegana</h3>
+              <span class="menu-item__price" aria-label="R$ 15">R$&nbsp;15</span>
+            </div>
+            <p class="menu-item__desc">Recheada com legumes e tomate com manjericão.</p>
+            <span class="vegan-badge">
+              <img src="fotos/Group1.png" alt="" aria-hidden="true" width="13" height="13">Vegano
+            </span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Empanada de Frango</h3>
+              <span class="menu-item__price" aria-label="R$ 15">R$&nbsp;15</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="section-tagline container" data-animate>
+        Tudo Orgânico para você conhecer o verdadeiro sabor da natureza!
+      </p>
+
+    </section>
+
+    <!-- ────────────── ESPECIAIS ────────────── -->
+    <section id="especiais" class="menu-section" aria-labelledby="especiais-heading">
+
+      <div class="section-header container" data-animate>
+        <span class="section-label">Com carinho especial</span>
+        <h2 class="section-title" id="especiais-heading">Especiais</h2>
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+      </div>
+
+      <div class="section-hero container" data-animate>
+        <img src="fotos/especiais.png"
+             alt="Salada de frutas orgânicas com iogurte natural, granola e mel"
+             class="section-hero__img"
+             loading="lazy">
+      </div>
+
+      <div class="items-grid container">
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Pão de Queijo Recheado</h3>
+              <span class="menu-item__price" aria-label="R$ 16">R$&nbsp;16</span>
+            </div>
+            <p class="menu-item__desc">Recheio de geleia da casa <em>(consulte sabores do dia)</em>.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Salada de Frutas com Iogurte</h3>
+              <span class="menu-item__price" aria-label="R$ 19">R$&nbsp;19</span>
+            </div>
+            <p class="menu-item__desc">Acompanha mel, granola orgânica Native e iogurte natural orgânico Nata da Serra <em>(consulte frutas disponíveis)</em>.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Bowl de Frutas</h3>
+              <span class="menu-item__price" aria-label="R$ 26">R$&nbsp;26</span>
+            </div>
+            <p class="menu-item__desc">Frutas orgânicas congeladas batidas formando um creme leve e refrescante, decorado com banana, granola e chia <em>(consulte sabores do dia)</em>.</p>
+            <span class="vegan-badge">
+              <img src="fotos/Group1.png" alt="" aria-hidden="true" width="13" height="13">Vegano
+            </span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Açaí na Tigela</h3>
+              <span class="menu-item__price" aria-label="R$ 22">R$&nbsp;22</span>
+            </div>
+            <p class="menu-item__desc">Açaí orgânico batido com banana, decorado com granola e banana em rodelas.</p>
+            <span class="vegan-badge">
+              <img src="fotos/Group1.png" alt="" aria-hidden="true" width="13" height="13">Vegano
+            </span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="quote-block container" data-animate>
+        <blockquote class="quote-block__quote">
+          <p>Além do aspecto saudável ao oferecermos uma refeição orgânica, temos um
+          compromisso com a sustentabilidade do planeta e o apoio aos pequenos produtores.</p>
+        </blockquote>
+      </div>
+
+    </section>
+
+    <!-- ────────────── DOCES ────────────── -->
+    <section id="doces" class="menu-section menu-section--alt" aria-labelledby="doces-heading">
+
+      <div class="section-header container" data-animate>
+        <span class="section-label">Adoce o seu dia</span>
+        <h2 class="section-title" id="doces-heading">Doces</h2>
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+      </div>
+
+      <p class="section-tagline section-tagline--top container" data-animate>
+        Viva a feliz experiência de uma refeição saborosa em harmonia com seu corpo e coração!
+      </p>
+
+      <div class="section-hero container" data-animate>
+        <img src="fotos/doces.png"
+             alt="Cookie artesanal de chocolate"
+             class="section-hero__img"
+             loading="lazy">
+      </div>
+
+      <div class="items-grid container">
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Bolo Fatia</h3>
+              <span class="menu-item__price" aria-label="R$ 9">R$&nbsp;9</span>
+            </div>
+            <p class="menu-item__desc">Consultar sabores do dia.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Bolo Especial</h3>
+              <span class="menu-item__price" aria-label="R$ 12">R$&nbsp;12</span>
+            </div>
+            <p class="menu-item__desc">Consultar sabores do dia.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Brownie</h3>
+              <span class="menu-item__price" aria-label="R$ 16">R$&nbsp;16</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Cookie</h3>
+              <span class="menu-item__price" aria-label="R$ 9">R$&nbsp;9</span>
+            </div>
+            <p class="menu-item__desc">Chocolate ou maracujá.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Panqueca Doce</h3>
+              <span class="menu-item__price" aria-label="R$ 19">R$&nbsp;19</span>
+            </div>
+            <p class="menu-item__desc">Ovos, banana, aveia, chia, canela e cacau <em>(mel opcional)</em>.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Panqueca Doce Vegana</h3>
+              <span class="menu-item__price" aria-label="R$ 19">R$&nbsp;19</span>
+            </div>
+            <p class="menu-item__desc">Leite vegetal, banana, aveia, chia, canela e cacau.</p>
+            <span class="vegan-badge">
+              <img src="fotos/Group1.png" alt="" aria-hidden="true" width="13" height="13">Vegano
+            </span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Torta de Maçã</h3>
+              <span class="menu-item__price" aria-label="R$ 28">R$&nbsp;28</span>
+            </div>
+            <p class="menu-item__desc">Tradicional torta holandesa de maçã com massa crocante e recheio de maçã com canela.</p>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ────────────── BEBIDAS ────────────── -->
+    <section id="bebidas" class="menu-section" aria-labelledby="bebidas-heading">
+
+      <div class="section-header container" data-animate>
+        <span class="section-label">Para acompanhar</span>
+        <h2 class="section-title" id="bebidas-heading">Bebidas</h2>
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+      </div>
+
+      <div class="section-hero container" data-animate>
+        <img src="fotos/bebidas.png"
+             alt="Suco especial de morango fresco e orgânico"
+             class="section-hero__img"
+             loading="lazy">
+      </div>
+
+      <div class="items-grid container">
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Café Expresso</h3>
+              <span class="menu-item__price" aria-label="R$ 10">R$&nbsp;10</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Café Coado</h3>
+              <span class="menu-item__price" aria-label="R$ 10">R$&nbsp;10</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Chocolate Quente</h3>
+              <span class="menu-item__price" aria-label="R$ 16">R$&nbsp;16</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Cappuccino Brasileiro</h3>
+              <span class="menu-item__price" aria-label="R$ 16">R$&nbsp;16</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Café com Leite</h3>
+              <span class="menu-item__price" aria-label="R$ 14">R$&nbsp;14</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Sucos</h3>
+              <span class="menu-item__price" aria-label="R$ 12">R$&nbsp;12</span>
+            </div>
+            <p class="menu-item__desc">Consultar sabores do dia.</p>
+          </div>
+        </article>
+
+        <article class="menu-item menu-item--wide" data-animate>
+          <div class="menu-item__body">
+            <div class="menu-item__row">
+              <h3 class="menu-item__name">Sucos Especiais</h3>
+              <span class="menu-item__price" aria-label="R$ 18">R$&nbsp;18</span>
+            </div>
+            <ul class="juice-list" aria-label="Sabores disponíveis">
+              <li><span class="juice-dot" style="background:#4A8E3A" aria-hidden="true"></span>Verde — couve, laranja ou abacaxi, maçã, limão e hortelã</li>
+              <li><span class="juice-dot" style="background:#A82828" aria-hidden="true"></span>Vermelho — beterraba, laranja ou abacaxi, cenoura, batata doce e hortelã</li>
+              <li><span class="juice-dot" style="background:#E07020" aria-hidden="true"></span>Laranja com pitaya ou açaí</li>
+              <li><span class="juice-dot" style="background:#E89020" aria-hidden="true"></span>Vitamina C — cenoura, laranja e acerola</li>
+              <li><span class="juice-dot" style="background:#C8C830" aria-hidden="true"></span>Abacaxi</li>
+              <li><span class="juice-dot" style="background:#70B840" aria-hidden="true"></span>Abacaxi com hortelã</li>
+              <li><span class="juice-dot" style="background:#D8D860" aria-hidden="true"></span>Limonada suíça</li>
+              <li><span class="juice-dot" style="background:#C87820" aria-hidden="true"></span>Manga especial — manga, limão e leite condensado</li>
+              <li><span class="juice-dot" style="background:#D03870" aria-hidden="true"></span>Morango</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ===================== FORNECEDORES ===================== -->
+  <aside class="suppliers" aria-label="Nossos fornecedores orgânicos">
+    <div class="container">
+      <h2 class="suppliers__title" data-animate>Nossos Fornecedores</h2>
+      <p class="suppliers__subtitle" data-animate>
+        Parceiros que compartilham nosso compromisso com a agricultura orgânica e os pequenos produtores.
+      </p>
+      <div class="suppliers__grid" data-animate>
+        <figure class="supplier-item">
+          <img src="fornecedores/Logo-Korin-1.png" alt="Kōrin" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/sambazon.png" alt="Sambazon" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/image001.png" alt="Native — Produtos da Natureza" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/image 14.png" alt="Ovos Orgânicos Malabar" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/image 15.png" alt="Orgânicos da Mantiqueira" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/image 8.png" alt="Fazenda Guata Porá" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/image 12.png" alt="Salada Amazônia" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/logo.png" alt="Produtos Paullínia" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/Mask group.png" alt="Volkmann Alimentos" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/logo-vinagre-sao-francisco.png" alt="Vinagre São Francisco" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/Group 9.png" alt="EcoBio — Produto Orgânico" class="supplier-item__logo" loading="lazy">
+        </figure>
+        <figure class="supplier-item">
+          <img src="fornecedores/ChatGPT Image 4 de mai. de 2026, 15_22_22.png" alt="Orgânico Sem Marca" class="supplier-item__logo" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+
+    <div class="site-footer__inner container">
+      <div class="site-footer__brand">
+        <img src="logo/SVG/logo-sitio-novo.svg" alt="Ecologia Café Orgânico" class="site-footer__logo" loading="lazy">
+        <p class="site-footer__tagline">Alimentação orgânica que cuida de você e do planeta.</p>
+      </div>
+    </div>
+
+    <div class="reservation-wrapper container">
+      <p class="reservation-text">
+        Vem com a turma? Para grupos de 6 ou mais pessoas, sugerimos reservar sua mesa com antecedência.
+        <a href="https://wa.me/5519993750684" target="_blank" rel="noopener noreferrer">Fale com a gente no WhatsApp</a>.
+      </p>
+    </div>
+
+    <p class="site-footer__legal container">Desenvolvido por Rujo Design &mdash; &copy; 2026 Ecologia Café Orgânico. Todos os direitos reservados.</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

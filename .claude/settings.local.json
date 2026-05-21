@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"D:\\\\Clientes\\\\ecologia\\\\cardapio-digital\" -Recurse)",
+      "Bash(Select-Object FullName, Extension, Length)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(python3 -c ' *)",
+      "Read(//usr/**)",
+      "Bash(command -v node)",
+      "Bash(command -v npx)",
+      "Bash(/c/Users/rowil.000/AppData/Local/Microsoft/WindowsApps/python -c \"import pdfplumber; print\\('ok'\\)\")",
+      "Bash(/c/Users/rowil.000/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -c 'import pdfplumber; print\\('\\\\''pdfplumber ok'\\\\''\\)')",
+      "Bash(/c/Users/rowil.000/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -c 'from pypdf import PdfReader; print\\('\\\\''pypdf ok'\\\\''\\)')",
+      "Bash(/c/Users/rowil.000/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -c ' *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git config *)"
+    ]
+  }
+}
