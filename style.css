@@ -638,7 +638,114 @@ button {
 }
 
 /* ─────────────────────────────────────────────
-   15. SITE FOOTER
+   15. COMO CHEGAR / LOCALIZAÇÃO
+───────────────────────────────────────────── */
+.location {
+  background: #F5F0E8;
+  padding-block: var(--sp-8);
+}
+
+.location__header {
+  text-align: center;
+  margin-bottom: var(--sp-6);
+}
+
+.location__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  color: var(--clr-primary);
+  margin-top: var(--sp-3);
+  margin-bottom: var(--sp-3);
+}
+
+.location__address {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--clr-text-secondary);
+  max-width: 480px;
+  margin-inline: auto;
+  line-height: 1.6;
+}
+
+.location__map {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 32px var(--clr-shadow-md);
+  margin-bottom: var(--sp-5);
+}
+
+.location__map iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.location__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.location__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  width: 100%;
+  max-width: 320px;
+  padding: var(--sp-3) var(--sp-5);
+  border-radius: var(--r-pill);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  transition:
+    transform var(--dur-fast) ease,
+    box-shadow var(--dur-fast) ease,
+    background var(--dur-fast) ease,
+    color var(--dur-fast) ease;
+}
+
+.location__btn-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.location__btn--primary {
+  background: var(--clr-primary);
+  color: #fff;
+}
+
+.location__btn--primary:hover {
+  background: var(--clr-primary-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--clr-shadow-md);
+}
+
+.location__btn--outline {
+  background: #fff;
+  color: var(--clr-primary);
+  border: 1.5px solid var(--clr-border);
+}
+
+.location__btn--outline:hover {
+  border-color: var(--clr-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--clr-shadow);
+}
+
+/* ─────────────────────────────────────────────
+   16. SITE FOOTER
 ───────────────────────────────────────────── */
 .site-footer {
   background: #495E27;
@@ -693,7 +800,7 @@ button {
 }
 
 /* ─────────────────────────────────────────────
-   16. ÁREA DE RESERVAS
+   17. ÁREA DE RESERVAS
 ───────────────────────────────────────────── */
 .reservation-wrapper {
   padding-top: var(--sp-5);
@@ -732,7 +839,7 @@ button {
 }
 
 /* ─────────────────────────────────────────────
-   17. ANIMAÇÕES — Intersection Observer
+   18. ANIMAÇÕES — Intersection Observer
 ───────────────────────────────────────────── */
 [data-animate] {
   opacity: 0;
@@ -758,7 +865,7 @@ button {
 }
 
 /* ─────────────────────────────────────────────
-   17. FOCUS STYLES
+   19. FOCUS STYLES
 ───────────────────────────────────────────── */
 :focus-visible {
   outline: 2px solid var(--clr-accent);
@@ -767,7 +874,7 @@ button {
 }
 
 /* ─────────────────────────────────────────────
-   18. MEDIA QUERIES — Tablet (≥ 640px)
+   20. MEDIA QUERIES — Tablet (≥ 640px)
 ───────────────────────────────────────────── */
 @media (min-width: 640px) {
 
@@ -791,6 +898,15 @@ button {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .location__actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .location__btn {
+    width: auto;
+  }
+
   .site-footer__inner {
     flex-direction: column;
     align-items: center;
@@ -803,7 +919,7 @@ button {
 }
 
 /* ─────────────────────────────────────────────
-   19. MEDIA QUERIES — Desktop (≥ 1024px)
+   21. MEDIA QUERIES — Desktop (≥ 1024px)
 ───────────────────────────────────────────── */
 @media (min-width: 1024px) {
 
@@ -854,7 +970,7 @@ button {
 }
 
 /* ─────────────────────────────────────────────
-   20. MEDIA QUERIES — Wide Desktop (≥ 1280px)
+   22. MEDIA QUERIES — Wide Desktop (≥ 1280px)
 ───────────────────────────────────────────── */
 @media (min-width: 1280px) {
 
