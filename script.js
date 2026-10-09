@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const nav     = document.getElementById('category-nav');
   const header  = document.querySelector('.site-header');
-  const sections = document.querySelectorAll('.menu-section[id]');
+  const sections = document.querySelectorAll('.menu-section[id], #como-chegar');
   const navLinks = document.querySelectorAll('.nav-link');
 
   // ──────────────────────────────────────────
