@@ -865,6 +865,64 @@ button {
 }
 
 /* ─────────────────────────────────────────────
+   VOLTAR AO TOPO
+───────────────────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  right: calc(var(--sp-4) + env(safe-area-inset-right, 0px));
+  bottom: calc(var(--sp-4) + env(safe-area-inset-bottom, 0px));
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--clr-primary);
+  color: #fff;
+  box-shadow: 0 4px 16px var(--clr-shadow-md);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(var(--sp-2));
+  pointer-events: none;
+  transition:
+    opacity var(--dur-fast) ease,
+    transform var(--dur-fast) var(--ease-out),
+    background var(--dur-fast) ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.back-to-top[hidden] {
+  display: grid !important;
+  visibility: hidden;
+}
+
+.back-to-top.is-shown {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: var(--clr-primary-mid);
+}
+
+.back-to-top:focus-visible {
+  border-radius: 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: none; }
+}
+
+@media (min-width: 1024px) {
+  .back-to-top {
+    right: calc(var(--sp-5) + env(safe-area-inset-right, 0px));
+    bottom: calc(var(--sp-5) + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* ─────────────────────────────────────────────
    19. FOCUS STYLES
 ───────────────────────────────────────────── */
 :focus-visible {

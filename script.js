@@ -89,7 +89,42 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ──────────────────────────────────────────
-  // 4. SMOOTH SCROLL com offset do nav fixo
+  // 4. VOLTAR AO TOPO — aparece após a primeira dobra
+  // ──────────────────────────────────────────
+  const backToTop = document.getElementById('back-to-top');
+
+  if (backToTop) {
+    let shown = false;
+    let hideTimer;
+
+    const update = () => {
+      const shouldShow = window.scrollY > window.innerHeight;
+      if (shouldShow === shown) return;
+      shown = shouldShow;
+      clearTimeout(hideTimer);
+
+      if (shown) {
+        backToTop.hidden = false;
+        requestAnimationFrame(() => backToTop.classList.add('is-shown'));
+      } else {
+        backToTop.classList.remove('is-shown');
+        // Espera o fade terminar antes de tirar da árvore de acessibilidade
+        hideTimer = setTimeout(() => { backToTop.hidden = true; }, 250);
+      }
+    };
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+      document.querySelector('.site-header__logo-link')?.focus({ preventScroll: true });
+    });
+  }
+
+  // ──────────────────────────────────────────
+  // 5. SMOOTH SCROLL com offset do nav fixo
   // ──────────────────────────────────────────
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
