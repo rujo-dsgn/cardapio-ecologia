@@ -124,49 +124,23 @@ button {
    4. SITE HEADER
 ───────────────────────────────────────────── */
 .site-header {
-  background: #cead70;
-  color: #2E1F14;
-  padding-block: var(--sp-7) var(--sp-8);
+  background: var(--clr-primary);
   position: relative;
   overflow: hidden;
-  text-align: center;
 }
 
-.site-header::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 55% 60% at 10% 40%, rgba(46, 31, 20, 0.06) 0%, transparent 65%),
-    radial-gradient(ellipse 45% 50% at 88% 20%, rgba(46, 31, 20, 0.04) 0%, transparent 60%);
-  pointer-events: none;
-}
-
-.site-header__inner {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--sp-4);
-}
-
+/* Foto hero com logo e slogan já aplicados — exibida inteira, sem corte */
 .site-header__logo-link {
-  display: inline-flex;
-  transition: opacity var(--dur-fast) ease;
-}
-.site-header__logo-link:hover,
-.site-header__logo-link:focus-visible {
-  opacity: 0.85;
+  display: block;
 }
 .site-header__logo-link:focus-visible {
   outline: 2px solid var(--clr-accent-light);
-  outline-offset: 4px;
-  border-radius: var(--r-sm);
+  outline-offset: -4px;
 }
 
-.site-header__logo {
-  height: 288px;
-  width: auto;
+.site-header__hero {
+  width: 100%;
+  height: auto;
 }
 
 .site-header__tagline {
