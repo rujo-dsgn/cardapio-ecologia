@@ -721,23 +721,26 @@ button {
 /* ─────────────────────────────────────────────
    16. SITE FOOTER
 ───────────────────────────────────────────── */
-/* Foto aérea do sítio inteira no topo (proporção 1920×891); o conteúdo
-   começa logo abaixo, e o fim da foto funde no verde do footer */
+/* Foto aérea do sítio ao fundo, com o conteúdo por cima. Altura mínima na
+   proporção da foto (1920×891) para ela aparecer inteira; véu verde
+   escuro garante leitura do texto */
 .site-footer {
-  --footer-photo-h: calc(100vw * 891 / 1920);
+  min-height: calc(100vw * 891 / 1920);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background:
-    linear-gradient(to bottom, rgba(73, 94, 39, 0) calc(var(--footer-photo-h) * 0.82), #495E27 var(--footer-photo-h)),
-    url('fotos/footer-960.jpg') top center / 100% auto no-repeat,
+    linear-gradient(rgba(36, 47, 19, 0.55), rgba(36, 47, 19, 0.75)),
+    url('fotos/footer-960.jpg') center / cover no-repeat,
     #495E27;
   color: rgba(255, 255, 255, 0.85);
-  padding-top: calc(var(--footer-photo-h) + var(--sp-5));
-  padding-bottom: var(--sp-5);
+  padding-block: var(--sp-7) var(--sp-5);
 }
 
 @media (min-width: 961px) {
   .site-footer {
     background-image:
-      linear-gradient(to bottom, rgba(73, 94, 39, 0) calc(var(--footer-photo-h) * 0.82), #495E27 var(--footer-photo-h)),
+      linear-gradient(rgba(36, 47, 19, 0.55), rgba(36, 47, 19, 0.75)),
       url('fotos/footer.jpg');
   }
 }
