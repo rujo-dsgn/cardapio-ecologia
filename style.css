@@ -722,15 +722,14 @@ button {
    16. SITE FOOTER
 ───────────────────────────────────────────── */
 /* Foto aérea do sítio ao fundo, com o conteúdo por cima. Altura mínima na
-   proporção da foto (1920×891) para ela aparecer inteira; véu verde
-   escuro garante leitura do texto */
+   proporção da foto (1920×891) para ela aparecer inteira; o escurecimento
+   que garante leitura do texto já vem aplicado na própria foto */
 .site-footer {
   min-height: calc(100vw * 891 / 1920);
   display: flex;
   flex-direction: column;
   justify-content: center;
   background:
-    linear-gradient(rgba(36, 47, 19, 0.55), rgba(36, 47, 19, 0.75)),
     url('fotos/footer-960.jpg') center / cover no-repeat,
     #495E27;
   color: rgba(255, 255, 255, 0.85);
@@ -739,9 +738,7 @@ button {
 
 @media (min-width: 961px) {
   .site-footer {
-    background-image:
-      linear-gradient(rgba(36, 47, 19, 0.55), rgba(36, 47, 19, 0.75)),
-      url('fotos/footer.jpg');
+    background-image: url('fotos/footer.jpg');
   }
 }
 
