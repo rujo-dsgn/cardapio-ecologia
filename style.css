@@ -810,8 +810,7 @@ button {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   margin-top: auto; /* empurra os créditos para a base do footer */
-  padding-top: var(--sp-4);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: var(--sp-6);
 }
 
 .site-footer__legal-link {
@@ -823,9 +822,8 @@ button {
    17. ÁREA DE RESERVAS
 ───────────────────────────────────────────── */
 .reservation-wrapper {
-  padding-top: var(--sp-5);
-  padding-bottom: var(--sp-4);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-block: var(--sp-5);
+  border-block: 1px solid rgba(255, 255, 255, 0.12); /* fios abrem e fecham o parágrafo */
   margin-top: var(--sp-4);
 }
 
