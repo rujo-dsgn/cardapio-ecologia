@@ -721,20 +721,23 @@ button {
 /* ─────────────────────────────────────────────
    16. SITE FOOTER
 ───────────────────────────────────────────── */
-/* Foto aérea do sítio ao fundo; gradiente escurece a base para o texto */
+/* Foto aérea do sítio inteira no topo (proporção 1920×891); o conteúdo
+   começa logo abaixo, e o fim da foto funde no verde do footer */
 .site-footer {
+  --footer-photo-h: calc(100vw * 891 / 1920);
   background:
-    linear-gradient(to bottom, rgba(36, 47, 19, 0.35) 0%, rgba(36, 47, 19, 0.75) 55%, rgba(36, 47, 19, 0.92) 100%),
-    url('fotos/footer-960.jpg') center / cover no-repeat,
+    linear-gradient(to bottom, rgba(73, 94, 39, 0) calc(var(--footer-photo-h) * 0.82), #495E27 var(--footer-photo-h)),
+    url('fotos/footer-960.jpg') top center / 100% auto no-repeat,
     #495E27;
   color: rgba(255, 255, 255, 0.85);
-  padding-block: var(--sp-8) var(--sp-5);
+  padding-top: calc(var(--footer-photo-h) + var(--sp-5));
+  padding-bottom: var(--sp-5);
 }
 
 @media (min-width: 961px) {
   .site-footer {
     background-image:
-      linear-gradient(to bottom, rgba(36, 47, 19, 0.35) 0%, rgba(36, 47, 19, 0.75) 55%, rgba(36, 47, 19, 0.92) 100%),
+      linear-gradient(to bottom, rgba(73, 94, 39, 0) calc(var(--footer-photo-h) * 0.82), #495E27 var(--footer-photo-h)),
       url('fotos/footer.jpg');
   }
 }
