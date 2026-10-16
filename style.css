@@ -721,10 +721,22 @@ button {
 /* ─────────────────────────────────────────────
    16. SITE FOOTER
 ───────────────────────────────────────────── */
+/* Foto aérea do sítio ao fundo; gradiente escurece a base para o texto */
 .site-footer {
-  background: #495E27;
-  color: rgba(255, 255, 255, 0.7);
-  padding-block: var(--sp-7) var(--sp-5);
+  background:
+    linear-gradient(to bottom, rgba(36, 47, 19, 0.35) 0%, rgba(36, 47, 19, 0.75) 55%, rgba(36, 47, 19, 0.92) 100%),
+    url('fotos/footer-960.jpg') center / cover no-repeat,
+    #495E27;
+  color: rgba(255, 255, 255, 0.85);
+  padding-block: var(--sp-8) var(--sp-5);
+}
+
+@media (min-width: 961px) {
+  .site-footer {
+    background-image:
+      linear-gradient(to bottom, rgba(36, 47, 19, 0.35) 0%, rgba(36, 47, 19, 0.75) 55%, rgba(36, 47, 19, 0.92) 100%),
+      url('fotos/footer.jpg');
+  }
 }
 
 .site-footer__inner {
@@ -762,7 +774,7 @@ button {
 .site-footer__legal {
   font-family: var(--font-body);
   font-size: 0.8125rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   padding-top: var(--sp-4);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
