@@ -759,6 +759,32 @@ button {
   margin-bottom: var(--sp-2);
 }
 
+.site-footer__social {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  min-height: 48px;
+  padding-inline: var(--sp-3);
+  border-radius: var(--r-pill);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+  transition: background var(--dur-fast) ease;
+}
+.site-footer__social:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.site-footer__social:focus-visible {
+  outline: 2px solid var(--clr-accent-light);
+  outline-offset: 2px;
+}
+
+.site-footer__social-icon {
+  flex-shrink: 0;
+}
+
 .site-footer__tagline {
   font-family: var(--font-body);
   font-size: 0.9375rem;
