@@ -722,23 +722,29 @@ button {
    16. SITE FOOTER
 ───────────────────────────────────────────── */
 /* Foto aérea do sítio ao fundo, com o conteúdo por cima. Altura mínima na
-   proporção da foto (1920×891) para ela aparecer inteira; o escurecimento
-   que garante leitura do texto já vem aplicado na própria foto */
+   proporção da foto (1920×891) para ela aparecer inteira. A foto já vem
+   escurecida do Figma; por cima, uma sombra radial atrás do conteúdo e um
+   degradê na base (créditos) reforçam a leitura sem apagar as bordas */
 .site-footer {
+  --footer-shade:
+    radial-gradient(ellipse 60% 55% at 50% 55%, rgba(20, 28, 10, 0.55), transparent),
+    linear-gradient(to top, rgba(20, 28, 10, 0.7), transparent 25%);
   min-height: calc(100vw * 891 / 1920);
   display: flex;
   flex-direction: column;
   justify-content: center;
   background:
+    var(--footer-shade),
     url('fotos/footer-960.jpg') center / cover no-repeat,
     #495E27;
-  color: rgba(255, 255, 255, 0.85);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 0 12px rgba(0, 0, 0, 0.35);
   padding-block: var(--sp-7) var(--sp-5);
 }
 
 @media (min-width: 961px) {
   .site-footer {
-    background-image: url('fotos/footer.jpg');
+    background-image: var(--footer-shade), url('fotos/footer.jpg');
   }
 }
 
@@ -804,7 +810,8 @@ button {
 .site-footer__legal {
   font-family: var(--font-body);
   font-size: 0.8125rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
   text-align: center;
   margin-top: auto; /* empurra os créditos para a base do footer */
   padding-top: var(--sp-6);
@@ -826,10 +833,10 @@ button {
 
 .reservation-text {
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85);
+  color: #fff;
   text-align: center;
   max-width: 680px;
   margin-inline: auto;
